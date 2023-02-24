@@ -17,6 +17,10 @@ s = m:section(TypedSection, "baidupcs-web")
 s.addremove = false
 s.anonymous = true
 
+o = s:option(Value, "bduss", translate("BDUSS"))
+o.description = translate("方便复制粘贴")
+o.rmempty = false
+
 enable = s:option(Flag, "enabled", translate("启用"))
 enable.rmempty = false
 
